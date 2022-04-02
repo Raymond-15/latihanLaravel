@@ -31,10 +31,4 @@ Route::get('/about', function () {
 
 Route::get('/blog', [PostController::class, 'index']);
 
-Route::get('posts/{slug}', function ($slug) {
-
-    return view('post', [
-        'judul' => 'Single Post',
-        'post' => Post::find($slug)
-    ]);
-});
+Route::get('posts/{slug}', [PostController::class, 'show']);
