@@ -24,4 +24,9 @@ class Post
             'body' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod sequi consequuntur laborum optio! Doloremque consequatur illo fugiat ipsam enim aspernatur, suscipit error quae maxime sit velit laboriosam reiciendis a tenetur!'
         ]
     ];
+
+    public static function all()
+    {
+        return self::$blog_posts;
+    }
 }
